@@ -2,25 +2,25 @@
 
 # ===================================================================================================
 # Description:
-#       Script will decode old WINDOW-1251 file formate into UTF-8
+#       Script decodes an old WINDOW-1251 file (line by line) into the UTF-8 format
 #
-# Copyright:
-#       Many thanks for https://2cyr.com and to bad that there is no public API :)
-#       Inital https://2cyr.com site settongs to decode the broken file:
-#           1. Expert: source encoding: UTF-8
-#           1. Displayed as: WINDOWS-1252
+# Script usage example:
+#       $ source convert.sh /Users/tomsoir/Desktop/EXAMPLE.sql
 #
 # Program plan:
 #       1. Read file line by line to collect common metrics (number of lines, etc...)
 #       1. Read file line by line to decode them
-#           1.1 Find bad line
+#           1.1 Find a bad line
 #           1.1 Send HTTP-request to https://2cyr.com to decode it
-#           1.1 Parse the response (plane text HTML)
+#           1.1 Parse the response (plain text HTML)
 #           1.1 Replace bad charset line with decoded UTF-8 line
 #           1.1 Print Result
 #
-# Script usage example:
-#       $ source convert.sh /Users/tomsoir/Desktop/EXAMPLE.sql
+# Copyright:
+#       Many thanks for https://2cyr.com and too bad that there is no public API :)
+#       Initial https://2cyr.com site settings to decode the broken file:
+#           1. Expert: source encoding: UTF-8
+#           1. Displayed as: WINDOWS-1252
 # ===================================================================================================
 
 INPUT=$1                  # file path
