@@ -17,7 +17,7 @@
 #           1.1 Print Result
 #
 # Copyright:
-#       Many thanks for https://2cyr.com and too bad that there is no public API
+#       Many thanks for https://2cyr.com and too bad that there is no public API :)
 #       Initial https://2cyr.com site settings to decode the broken file:
 #           1. Expert: source encoding: UTF-8
 #           1. Displayed as: WINDOWS-1252
